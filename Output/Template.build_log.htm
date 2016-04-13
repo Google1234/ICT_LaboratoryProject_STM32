@@ -1,0 +1,141 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+D:\Software Develop\GPS+GPRS\141202(SIM808)\STM32程序\程序0419\Project\RVMDK（uv4）\iSO-STM32.uvproj
+Project File Date:  04/25/2015
+
+<h2>Output:</h2>
+Build target 'ISO-MINI整板测试'
+compiling main.c...
+..\..\User\sim800l\SIM800L.h(8): warning:  #1295-D: Deprecated declaration GPSVLD - give arg types
+  unsigned char GPSVLD();
+..\..\User\sim800l\SIM800L.h(11): warning:  #1295-D: Deprecated declaration GetKeyCHG - give arg types
+  uint8_t GetKeyCHG();
+..\..\User\sim800l\SIM800L.h(14): warning:  #1295-D: Deprecated declaration CBCDATA - give arg types
+  void CBCDATA();
+..\..\User\main.c(28): warning:  #1295-D: Deprecated declaration GetId - give arg types
+  void GetId();
+..\..\User\main.c(41): warning:  #188-D: enumerated type mixed with another type
+  bool FLAG_BLE_CTS0=0;//CTS是否被拉低，拉低为1，否则为0
+..\..\User\main.c(42): warning:  #188-D: enumerated type mixed with another type
+  bool FLAG_BLE_CTS1=0;//CTS是否被拉高，拉高为1，否则为0
+..\..\User\main.c(43): warning:  #188-D: enumerated type mixed with another type
+  bool FLAG_LONG=0;             //分包长数据接收标识，准备接收为1，无为0
+..\..\User\main.c(109): warning:  #188-D: enumerated type mixed with another type
+                flag_send=0;
+..\..\User\main.c(110): warning:  #188-D: enumerated type mixed with another type
+                flag_cbc=0;
+..\..\User\main.c(111): warning:  #188-D: enumerated type mixed with another type
+                flag_gps=0;
+..\..\User\main.c(112): warning:  #188-D: enumerated type mixed with another type
+                flag_cbc=0;
+..\..\User\main.c(113): warning:  #188-D: enumerated type mixed with another type
+                flag_chg=0;
+..\..\User\main.c(119): warning:  #188-D: enumerated type mixed with another type
+                                flag_send=0;
+..\..\User\main.c(126): warning:  #188-D: enumerated type mixed with another type
+                                        flag_gps=0;
+..\..\User\main.c(130): warning:  #188-D: enumerated type mixed with another type
+                                flag_gps=1;             
+..\..\User\main.c(135): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+                                if(strstr(Ub,">")){
+..\..\User\main.c(153): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+                                                DebugPf(hd);
+..\..\User\main.c(154): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+                                                DebugPf(id);
+..\..\User\main.c(156): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+                                                DebugPf(tp);
+..\..\User\main.c(158): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+                                                DebugPf(lat);
+..\..\User\main.c(160): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+                                                DebugPf(lng);
+..\..\User\main.c(162): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+                                                DebugPf(cbc);
+..\..\User\main.c(164): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+                                                DebugPf(end);
+..\..\User\main.c(172): warning:  #188-D: enumerated type mixed with another type
+                                flag_cbc=0;
+..\..\User\main.c(176): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+                                if(strstr(Ub,"+CBC")){
+..\..\User\main.c(80): warning:  #177-D: variable "s" was declared but never referenced
+        char *s;
+..\..\User\main.c(218): warning:  #223-D: function "USART1_SendByte" declared implicitly
+        USART1_SendByte('S');
+..\..\User\main.c(200): warning:  #177-D: variable "i_d" was declared but never referenced
+        u8 i_d[9];
+..\..\User\main.c: 28 warnings, 0 errors
+compiling SIM800L.C...
+..\..\User\sim800l\SIM800L.h(8): warning:  #1295-D: Deprecated declaration GPSVLD - give arg types
+  unsigned char GPSVLD();
+..\..\User\sim800l\SIM800L.h(11): warning:  #1295-D: Deprecated declaration GetKeyCHG - give arg types
+  uint8_t GetKeyCHG();
+..\..\User\sim800l\SIM800L.h(14): warning:  #1295-D: Deprecated declaration CBCDATA - give arg types
+  void CBCDATA();
+..\..\User\sim800l\SIM800L.C(32): warning:  #177-D: variable "i" was declared but never referenced
+        int i;
+..\..\User\sim800l\SIM800L.C(33): warning:  #177-D: variable "RecLen" was declared but never referenced
+        int RecLen=0;
+..\..\User\sim800l\SIM800L.C(34): warning:  #177-D: variable "Ubyte" was declared but never referenced
+        u8 Ubyte=0;
+..\..\User\sim800l\SIM800L.C(201): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+                        USART2_DMASendString(Data,strlen(Data));
+..\..\User\sim800l\SIM800L.C(196): warning:  #177-D: variable "x" was declared but never referenced
+                int x,y;
+..\..\User\sim800l\SIM800L.C(196): warning:  #177-D: variable "y" was declared but never referenced
+                int x,y;
+..\..\User\sim800l\SIM800L.C(257): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+        gps=strstr(Ub,"+CGPSINF:");
+..\..\User\sim800l\SIM800L.C(257): warning:  #513-D: a value of type "char *" cannot be assigned to an entity of type "unsigned char *"
+        gps=strstr(Ub,"+CGPSINF:");
+..\..\User\sim800l\SIM800L.C(269): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+        gps=strstr(Ub,"+CGPSINF:");
+..\..\User\sim800l\SIM800L.C(269): warning:  #513-D: a value of type "char *" cannot be assigned to an entity of type "unsigned char *"
+        gps=strstr(Ub,"+CGPSINF:");
+..\..\User\sim800l\SIM800L.C(294): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+        bc=strstr(Ub,"+CBC:");
+..\..\User\sim800l\SIM800L.C(294): warning:  #513-D: a value of type "char *" cannot be assigned to an entity of type "unsigned char *"
+        bc=strstr(Ub,"+CBC:");
+..\..\User\sim800l\SIM800L.C: 15 warnings, 0 errors
+linking...
+Program Size: Code=8912 RO-data=336 RW-data=160 ZI-data=2912  
+FromELF: creating hex file...
+"..\..\Output\Template.axf" - 0 Error(s), 43 Warning(s).
+Load "..\\..\\Output\\Template.axf" 
+Set JLink Project File to "D:\Software Develop\GPS+GPRS\141202(SIM808)\STM32程序\程序0419\Project\RVMDK（uv4）\JLinkSettings.ini"
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.80g, compiled Feb 13 2014 20:50:02
+Firmware: J-Link ARM-OB STM32 compiled Aug 22 2012 19:52:04
+Hardware: V7.00
+S/N : 20090928 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TPIU fitted.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 500 kHz
+ 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+</pre>
+</body>
+</html>

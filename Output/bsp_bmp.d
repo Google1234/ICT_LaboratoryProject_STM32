@@ -1,0 +1,9 @@
+..\..\output\bsp_bmp.o: ..\..\User\sdcard\bsp_bmp.c
+..\..\output\bsp_bmp.o: ..\..\User\sdcard\bsp_bmp.h
+..\..\output\bsp_bmp.o: F:\Keil_v5\ARM\ARMCC\bin\..\include\math.h
+..\..\output\bsp_bmp.o: F:\Keil_v5\ARM\ARMCC\bin\..\include\stdio.h
+..\..\output\bsp_bmp.o: F:\Keil_v5\ARM\ARMCC\bin\..\include\stdlib.h
+..\..\output\bsp_bmp.o: F:\Keil_v5\ARM\ARMCC\bin\..\include\string.h
+..\..\output\bsp_bmp.o: ..\..\User\ff9\ff.h
+..\..\output\bsp_bmp.o: ..\..\User\ff9\integer.h
+..\..\output\bsp_bmp.o: ..\..\User\ff9\ffconf.h
