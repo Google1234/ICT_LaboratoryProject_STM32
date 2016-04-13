@@ -297,8 +297,8 @@
               </OCR_RVCT3>
               <OCR_RVCT4>
                 <Type>1</Type>
-                <StartAddress>0x20000000</StartAddress>
-                <Size>0x8000</Size>
+                <StartAddress>0x8000000</StartAddress>
+                <Size>0x80000</Size>
               </OCR_RVCT4>
               <OCR_RVCT5>
                 <Type>1</Type>
@@ -322,8 +322,8 @@
               </OCR_RVCT8>
               <OCR_RVCT9>
                 <Type>0</Type>
-                <StartAddress>0x20008000</StartAddress>
-                <Size>0x8000</Size>
+                <StartAddress>0x20000000</StartAddress>
+                <Size>0x10000</Size>
               </OCR_RVCT9>
               <OCR_RVCT10>
                 <Type>0</Type>
@@ -338,7 +338,7 @@
             <Optim>2</Optim>
             <oTime>0</oTime>
             <SplitLS>0</SplitLS>
-            <OneElfS>0</OneElfS>
+            <OneElfS>1</OneElfS>
             <Strict>0</Strict>
             <EnumInt>0</EnumInt>
             <PlainCh>0</PlainCh>
@@ -349,7 +349,7 @@
             <uSurpInc>0</uSurpInc>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>VECT_TAB_RAM</Define>
+              <Define>STM32F10X_HD, USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
               <IncludePath>..\..\Libraries\CMSIS;..\..\User;..\..\Libraries\FWlib\inc;..\..\User\Led;..\..\User\Lcd;..\..\User\usart;..\..\User\i2c;..\..\User\touch;..\..\User\SysTick;..\..\User\led;..\..\User\key;..\..\User\spi;..\..\User\iso;..\..\User\dht11;..\..\User\ds18b20;..\..\User\ov7725;..\..\User\adc;..\..\User\breathinglight;..\..\User\rda5807m;..\..\User\enc28j60;..\..\User\can;..\..\User\rtc;..\..\User\sram;..\..\User\norflash;..\..\User\usb\Mass_Storage\inc;..\..\User\usb\STM32_USB-FS-Device_Driver\inc;..\..\User\usb;..\..\User\sdcard;..\..\User\nandflash;..\..\User\ff9;..\..\User\ff9\option;..\..\User\iis;..\..\User\pcm1770;..\..\User\mp3\pub;..\..\User\sim900a;..\..\User\stepmotor;..\..\User\timer;..\..\User\ble;..\..\User\flash;..\..\User\usart;..\..\User\sim800l</IncludePath>
             </VariousControls>
