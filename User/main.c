@@ -27,8 +27,8 @@
 static void delay(uint16_t t);
 void GetId();
 
-uint8_t	uart3_buff[255];
-uint8_t CentL,CentR;//左右眼中心值存储单元
+//uint8_t	uart3_buff[255];												//delete：not been used
+//uint8_t CentL,CentR;//左右眼中心值存储单元				//delete：not been used
 
 unsigned char PK_Cnt=0;//开关机按钮按下后，计时次数
 

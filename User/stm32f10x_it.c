@@ -227,7 +227,7 @@ void EXTI0_IRQHandler(void)
 * Output         : None
 * Return         : None
 *******************************************************************************/
-void EXTI15_10_IRQHandler(void)
+void EXTI15_10_IRQHandler(void)      //分析：这是个GPIO中断，但是我认为此段代码无用，因为相应的GPIO、NVIC、EXTI配置
 {
 	if(!GPIO_ReadInputDataBit(GPIOB,GPIO_Pin_13))//下降沿
 	{
