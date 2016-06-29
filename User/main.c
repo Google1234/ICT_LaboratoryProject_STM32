@@ -129,12 +129,12 @@ int main(void)
 			if(flag_send){	
 				flag_send=0;
 				USART2_DMASS("AT+CGPSINF=32\n",100,100);//查询GPRMC数据					
-//				while(GPSVLD()!='A'){
-//					tp[0]='0';
-//					flag_gps=0;
-//					USART2_DMASS("AT+CGPSINF=32\n",100,100);//查询GPRMC数据
-//					delay(10000);
-//				}
+				while(GPSVLD()!='A'){
+					tp[0]='0';
+					flag_gps=0;
+					USART2_DMASS("AT+CGPSINF=32\n",100,100);//查询GPRMC数据
+					delay(10000);
+				}
 				flag_gps=1;		
 				GPSDATA();			//GPS数据提取到lat[],lng[]
 						
@@ -157,9 +157,9 @@ int main(void)
 				strncat(send_buff, "#\0",1);send_length+=1;strncat(send_buff, "20160318\0",8);        send_length+=8;	 //时间	
 				strncat(send_buff, "#\0",1);send_length+=1;strncat(send_buff, "092955\0",6);          send_length+=6;	 //时间					
 				strncat(send_buff, "#\0",1);send_length+=1;strncat(send_buff, "000,0,0,0\0",9);       send_length+=9;	 //运动信息	
-				strncat(send_buff, "#\0",1);send_length+=1;strncat(send_buff, "00\0",2);              send_length+=2;	 //电量	
+				strncat(send_buff, "#\0",1);send_length+=1;strncat(send_buff, cbc,sizeof(cbc));       send_length+=sizeof(cbc);	 //电量	
 				strncat(send_buff, "#\0",1);send_length+=1;	 //结束	
-				send_length+=1; //由于  USART2_SendByte(0x0a);算1位
+				send_length+=1; //由于  USART2_SendByte(0x0a)算1位
 				
 				memset(CMD_buff, 0, sizeof(CMD_buff));
 				strcat(CMD_buff, "AT+CIPSEND=\0");
