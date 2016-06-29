@@ -1,6 +1,6 @@
 ..\..\output\bsp_iso_test.o: ..\..\User\iso\bsp_iso_test.c
 ..\..\output\bsp_iso_test.o: ..\..\User\iso\bsp_iso_test.h
-..\..\output\bsp_iso_test.o: G:\ARM\ARMCC\bin\..\include\stdint.h
+..\..\output\bsp_iso_test.o: G:\Keil\ARM\ARMCC\bin\..\include\stdint.h
 ..\..\output\bsp_iso_test.o: ..\..\Libraries\CMSIS\stm32f10x.h
 ..\..\output\bsp_iso_test.o: ..\..\Libraries\CMSIS\core_cm3.h
 ..\..\output\bsp_iso_test.o: ..\..\Libraries\CMSIS\system_stm32f10x.h
@@ -27,7 +27,7 @@
 ..\..\output\bsp_iso_test.o: ..\..\User\timer\TIMER.h
 ..\..\output\bsp_iso_test.o: ..\..\User\usart\USART1_init.h
 ..\..\output\bsp_iso_test.o: ..\..\User\usart\static_init.h
-..\..\output\bsp_iso_test.o: G:\ARM\ARMCC\bin\..\include\String.h
-..\..\output\bsp_iso_test.o: G:\ARM\ARMCC\bin\..\include\stdio.h
+..\..\output\bsp_iso_test.o: G:\Keil\ARM\ARMCC\bin\..\include\String.h
+..\..\output\bsp_iso_test.o: G:\Keil\ARM\ARMCC\bin\..\include\stdio.h
 ..\..\output\bsp_iso_test.o: ..\..\User\usart\USART2_init.h
 ..\..\output\bsp_iso_test.o: ..\..\User\usart\printf_init.h

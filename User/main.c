@@ -58,11 +58,16 @@ unsigned char id[]="00000000";
 unsigned char tp[]="0";
 unsigned char lat[]="0000.0000";
 unsigned char lng[]="00000.0000";
+unsigned char lat_direction[]="N";
+unsigned char lng_direction[]="E";
 unsigned char cbc[]="000";
 unsigned char end[]="END";
 
-unsigned char ip[]="position.iego.net";
-unsigned char pt[]="10001";
+
+unsigned char ip[]="114.215.99.66";  //实验室阿里云
+unsigned char pt[]="4666";
+//unsigned char ip[]="120.27.121.236";  //我的阿里云
+//unsigned char pt[]="50001";
 
 unsigned char T_SEND=20;	//TCP发送间隔，30s
 unsigned char T_CBC=10;		//电量检测，10s
@@ -77,8 +82,13 @@ u8 Ub[500];
   */
 int main(void)
 { 
-	char *s;
 	
+	unsigned char send_buff[150];
+	unsigned char CMD_buff[50];
+	int send_length=0;
+	char num_str[10];
+	
+	char *s;	
 	/* 设置系统时钟 */
 	RCC_Configuration();
 	/* 设置 NVIC */
@@ -112,61 +122,76 @@ int main(void)
 		flag_cbc=0;
 		flag_chg=0;
 	
+
     while(1)
 		{
 			
-			if(flag_send){
+			if(flag_send){	
 				flag_send=0;
-				
-				USART2_DMASS("AT+CGPSINF=32\n",100,100);//查询GPRMC数据
-				
-				while(GPSVLD()!='A')
-				{
-					tp[0]='0';
-					flag_gps=0;
-					USART2_DMASS("AT+CGPSINF=32\n",100,100);//查询GPRMC数据
-					delay(10000);
-				}
+				USART2_DMASS("AT+CGPSINF=32\n",100,100);//查询GPRMC数据					
+//				while(GPSVLD()!='A'){
+//					tp[0]='0';
+//					flag_gps=0;
+//					USART2_DMASS("AT+CGPSINF=32\n",100,100);//查询GPRMC数据
+//					delay(10000);
+//				}
 				flag_gps=1;		
 				GPSDATA();			//GPS数据提取到lat[],lng[]
 						
 			//TCP SEND
-				USART2_DMASS("AT+CIPSEND=46\n",100,1000);		//
-				if(strstr(Ub,">")){
-						
-						USART2_DMAS(hd);
-						USART2_DMAS(id);
-						USART2_DMAS(",");
-						USART2_DMAS(tp);
-						USART2_DMAS(",");
-						USART2_DMAS(lat);
-						USART2_DMAS(",");
-						USART2_DMAS(lng);
-						USART2_DMAS(",");
-						USART2_DMAS(cbc);
-						USART2_DMAS(",");
-						USART2_DMAS(end);
-						USART2_DMAS("\r");
-						USART2_SendByte(0x0D);		//
-						USART2_SendByte(0x1A);		//
-					
-						DebugPf(hd);
-						DebugPf(id);
-						DebugPf(",");
-						DebugPf(tp);
-						DebugPf(",");
-						DebugPf(lat);
-						DebugPf(",");
-						DebugPf(lng);
-						DebugPf(",");
-						DebugPf(cbc);
-						DebugPf(",");
-						DebugPf(end);
-						DebugPf("\r\n");
+        memset(send_buff, 0, sizeof(send_buff));
+        send_length=0;
+				strncat(send_buff, "#\0",1);send_length+=1;strncat(send_buff, "355020151215100\0",15);send_length+=15; //设备号
+				strncat(send_buff, "#\0",1);send_length+=1;																													   //用户名
+				strncat(send_buff, "#\0",1);send_length+=1;strncat(send_buff, "0\0",1);               send_length+=1;  //状态位
+				strncat(send_buff, "#\0",1);send_length+=1;strncat(send_buff, "0000\0",4);            send_length+=4; //密码				
+				strncat(send_buff, "#\0",1);send_length+=1;strncat(send_buff, "ACT\0",3);             send_length+=3;	 //信息类型		
+				strncat(send_buff, "#\0",1);send_length+=1;strncat(send_buff, "46007\0",5);           send_length+=5;	 //GSM国家代码		
+				strncat(send_buff, "#\0",1);send_length+=1;strncat(send_buff, "580A4807\0",8);        send_length+=8;	 //基站信息			
+				strncat(send_buff, "#\0",1);send_length+=1;strncat(send_buff, "I\0",1);               send_length+=1;	 //状态
+				strncat(send_buff, "#\0",1);send_length+=1;strncat(send_buff,lng,10);send_length+=10;	 //GPS 经纬度：116.326400,E,39.990900,N	
+        strncat(send_buff, ",\0",1);send_length+=1;strncat(send_buff,lng_direction,1);send_length+=1;
+				strncat(send_buff, ",\0",1);send_length+=1;strncat(send_buff,lat,9);send_length+=9;
+				strncat(send_buff, ",\0",1);send_length+=1;strncat(send_buff,lat_direction,1);send_length+=1;
+				strncat(send_buff, ",\0",1);send_length+=1;strncat(send_buff, "000.00,0\0",8);        send_length+=8;//GPS 速度、方向：006.83,265	
+				strncat(send_buff, "#\0",1);send_length+=1;strncat(send_buff, "20160318\0",8);        send_length+=8;	 //时间	
+				strncat(send_buff, "#\0",1);send_length+=1;strncat(send_buff, "092955\0",6);          send_length+=6;	 //时间					
+				strncat(send_buff, "#\0",1);send_length+=1;strncat(send_buff, "000,0,0,0\0",9);       send_length+=9;	 //运动信息	
+				strncat(send_buff, "#\0",1);send_length+=1;strncat(send_buff, "00\0",2);              send_length+=2;	 //电量	
+				strncat(send_buff, "#\0",1);send_length+=1;	 //结束	
+				send_length+=1; //由于  USART2_SendByte(0x0a);算1位
+				
+				memset(CMD_buff, 0, sizeof(CMD_buff));
+				strcat(CMD_buff, "AT+CIPSEND=\0");
+				sprintf(num_str, "%03d\0",send_length);
+				strcat(CMD_buff, num_str);
+				strcat(CMD_buff, "\n");
+				USART2_DMASS(CMD_buff,100,1000);		//
+				if(strstr(Ub,">")){					                  
+					    USART2_DMAS(send_buff); 
+							USART2_SendByte(0x0a);			//算1位		
+							USART2_SendByte(0x1A);		  //					
 				}
+////   					USART2_DMAS(hd);
+////						USART2_DMAS(id);
+////						USART2_DMAS(",");
+////						USART2_DMAS(tp);
+////						USART2_DMAS(",");
+////						USART2_DMAS(lat);
+////						USART2_DMAS(",");
+////						USART2_DMAS(lng);
+////						USART2_DMAS(",");
+////						USART2_DMAS(cbc);
+////						USART2_DMAS(",");
+////						USART2_DMAS(end);
+////						USART2_DMAS("\r");
+////						USART2_SendByte(0x0D);		//
+////						USART2_SendByte(0x1A);		//
 					delay(1000);
 					USART2_DMASS(NULL,2000,1000);		//
-			}
+
+				}
+
 			
 			if(flag_cbc){
 				flag_cbc=0;
@@ -224,6 +249,22 @@ void GetId()
 	USART1_SendByte(id[i]);
 	}
 
+}
+int process_uart2_dmass_data(int len)
+{
+	int i=0;
+	for(i=0;i<len;i++){
+		DebugPf("%c",Ub[i]);
+	}
+	if(strstr(Ub,"Fix")){
+
+	}
+	if(strstr(Ub,"2D")){
+
+	}
+	if(strstr(Ub,"3D")){
+	}
+	
 }
 /* ----------------------------------------end of file------------------------------------------------ */
 

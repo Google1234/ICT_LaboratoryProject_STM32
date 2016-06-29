@@ -15,6 +15,8 @@ extern unsigned char id[];
 extern unsigned char tp[];
 extern unsigned char lat[];
 extern unsigned char lng[];
+extern unsigned char lat_direction[];
+extern unsigned char lng_direction[];
 extern unsigned char cbc[];
 extern unsigned char end[];
 
@@ -23,6 +25,7 @@ extern unsigned char pt[];
 
 extern u8 Ub[500];
 
+extern int process_uart2_dmass_data(int len);
 
 static void Delay_MS(u32 nCount_temp);
 
@@ -118,12 +121,12 @@ int Sim_ini(void)
 	Delay_MS(500);
 	USART2_DMASS("AT+CIPQSEND=0\r\n",500,100);
 	Delay_MS(500);
-	USART2_DMASS("AT+CIPSTART=\"TCP\",\"position.iego.net\",10001\r\n",500,100);
-	Delay_MS(500);
+	USART2_DMASS("AT+CIPSTART=\"TCP\",\"114.215.99.66\",4666\r\n",500,100); //实验室阿里云
+	//USART2_DMASS("AT+CIPSTART=\"TCP\",\"120.27.121.236\",50001\r\n",500,100); //我的阿里云
+  Delay_MS(500);
 	USART2_DMASS(NULL,5000,100);//发送一个NULL，用于读取USART2数据
 	Delay_MS(500);
-//
-	USART2_DMASS("AT+CGPSPWR=1\r\n",500,100);
+	USART2_DMASS("AT+CGPSPWR=1\r\n",500,100);//开启GPS供电
 	Delay_MS(2000);
 	USART2_DMASS("AT+CGPSRST=0\r\n",500,100);
 	Delay_MS(2000);
@@ -221,13 +224,8 @@ int USART2_DMASS(u8* Data,uint16_t BeTime,uint16_t AfTime)
 					
 		USART2_RX_Buffer_Clear();
 			
-//通过串口1显示				
-			DebugPf("USART2 Receive=%d\r\n",RecLen);
-			for(i=0;i<RecLen;i++){
-				DebugPf("%c",Ub[i]);
-			}
-			DebugPf("\r\n");
-			
+//处理接收到的数据				
+			process_uart2_dmass_data(RecLen);
 		return RecLen;	
 		
 }
@@ -265,23 +263,20 @@ void GPSDATA(void)
 {
 	unsigned char *gps;
 	unsigned char i;
-
 	gps=strstr(Ub,"+CGPSINF:");
-
 	gps+=26;
 	for(i=0;i<9;i++)
 	{
 		lat[i]=gps[i];
 	}
-//	DebugPf(lat);
-	
+	lat_direction[0]=gps[10];
 	gps+=12;
 	for(i=0;i<10;i++)
 	{
 		lng[i]=gps[i];
 	}
-//	DebugPf(lng);
-	
+	lng_direction[0]=gps[11];
+	//DebugPf(lng);
 	tp[0]='A';
 }
 
