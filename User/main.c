@@ -53,9 +53,9 @@ unsigned char BUFTX1[255];
 unsigned char BUFTX2[255];
 
 
-unsigned char hd[]="TE004:";
+unsigned char hd[]="355020151215100";
 unsigned char id[]="00000000";
-unsigned char tp[]="0";
+unsigned char tp[]="I";
 unsigned char lat[]="0000.0000";
 unsigned char lng[]="00000.0000";
 unsigned char lat_direction[]="N";
@@ -87,7 +87,9 @@ int main(void)
 	unsigned char CMD_buff[50];
 	int send_length=0;
 	char num_str[10];
-	
+//tessst
+int times=0;
+//	
 	char *s;	
 	/* 设置系统时钟 */
 	RCC_Configuration();
@@ -126,29 +128,39 @@ int main(void)
     while(1)
 		{
 			
-			if(flag_send){	
+			if(flag_send){
+////GSM得到位置
+//				USART2_DMASS("AT+CipGSMLOC=1,1\r\n",500,100);
+//				GSMDATA();
+////		
 				flag_send=0;
 				USART2_DMASS("AT+CGPSINF=32\n",100,100);//查询GPRMC数据					
-				while(GPSVLD()!='A'){
-					tp[0]='0';
-					flag_gps=0;
-					USART2_DMASS("AT+CGPSINF=32\n",100,100);//查询GPRMC数据
-					delay(10000);
-				}
+//				while(GPSVLD()!='A'){
+//					tp[0]='I';
+//					flag_gps=0;
+//					USART2_DMASS("AT+CGPSINF=32\n",100,100);//查询GPRMC数据
+//					delay(10000);
+//				}
+//tesst
+times++;
+//
 				flag_gps=1;		
 				GPSDATA();			//GPS数据提取到lat[],lng[]
 						
 			//TCP SEND
         memset(send_buff, 0, sizeof(send_buff));
         send_length=0;
-				strncat(send_buff, "#\0",1);send_length+=1;strncat(send_buff, "355020151215100\0",15);send_length+=15; //设备号
-				strncat(send_buff, "#\0",1);send_length+=1;																													   //用户名
-				strncat(send_buff, "#\0",1);send_length+=1;strncat(send_buff, "0\0",1);               send_length+=1;  //状态位
-				strncat(send_buff, "#\0",1);send_length+=1;strncat(send_buff, "0000\0",4);            send_length+=4; //密码				
+				strncat(send_buff, "#\0",1);send_length+=1;strncat(send_buff, hd,sizeof(hd));send_length+=sizeof(hd); //设备号
+				strncat(send_buff, "#\0",1);send_length+=1;																													  //用户名
+				strncat(send_buff, "#\0",1);send_length+=1;strncat(send_buff, "0\0",1);               send_length+=1; //状态位
+				strncat(send_buff, "#\0",1);send_length+=1;
+																									//tesst
+																										sprintf(num_str, "%04d\0",times);strncat(send_buff, num_str,4);            send_length+=4; //密码
+																										//strncat(send_buff, "0000\0",4);            send_length+=4; //密码				
 				strncat(send_buff, "#\0",1);send_length+=1;strncat(send_buff, "ACT\0",3);             send_length+=3;	 //信息类型		
 				strncat(send_buff, "#\0",1);send_length+=1;strncat(send_buff, "46007\0",5);           send_length+=5;	 //GSM国家代码		
 				strncat(send_buff, "#\0",1);send_length+=1;strncat(send_buff, "580A4807\0",8);        send_length+=8;	 //基站信息			
-				strncat(send_buff, "#\0",1);send_length+=1;strncat(send_buff, "I\0",1);               send_length+=1;	 //状态
+				strncat(send_buff, "#\0",1);send_length+=1;strncat(send_buff, tp,1);               send_length+=1;	 //GPS状态
 				strncat(send_buff, "#\0",1);send_length+=1;strncat(send_buff,lng,10);send_length+=10;	 //GPS 经纬度：116.326400,E,39.990900,N	
         strncat(send_buff, ",\0",1);send_length+=1;strncat(send_buff,lng_direction,1);send_length+=1;
 				strncat(send_buff, ",\0",1);send_length+=1;strncat(send_buff,lat,9);send_length+=9;
@@ -172,27 +184,11 @@ int main(void)
 							USART2_SendByte(0x0a);			//算1位		
 							USART2_SendByte(0x1A);		  //					
 				}
-////   					USART2_DMAS(hd);
 ////						USART2_DMAS(id);
-////						USART2_DMAS(",");
-////						USART2_DMAS(tp);
-////						USART2_DMAS(",");
-////						USART2_DMAS(lat);
-////						USART2_DMAS(",");
-////						USART2_DMAS(lng);
-////						USART2_DMAS(",");
-////						USART2_DMAS(cbc);
-////						USART2_DMAS(",");
-////						USART2_DMAS(end);
-////						USART2_DMAS("\r");
-////						USART2_SendByte(0x0D);		//
-////						USART2_SendByte(0x1A);		//
 					delay(1000);
 					USART2_DMASS(NULL,2000,1000);		//
 
 				}
-
-			
 			if(flag_cbc){
 				flag_cbc=0;
 				

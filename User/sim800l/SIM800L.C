@@ -10,7 +10,6 @@
 #define KEY_ON	0
 #define KEY_OFF	1
 
-extern unsigned char hd[];
 extern unsigned char id[];
 extern unsigned char tp[];
 extern unsigned char lat[];
@@ -263,23 +262,54 @@ void GPSDATA(void)
 {
 	unsigned char *gps;
 	unsigned char i;
+  float num=0.0;
+	int high=0;
 	gps=strstr(Ub,"+CGPSINF:");
 	gps+=26;
 	for(i=0;i<9;i++)
 	{
 		lat[i]=gps[i];
 	}
+//	sscanf(lat, "%f", &num);
+//	high=(int)(num/100);
+//	num=(num-high*100)/60+high;
+//	sprintf(lat, "%09f\0",num);
+//	//DebugPf(lat);printf("%f\n",num);
 	lat_direction[0]=gps[10];
 	gps+=12;
 	for(i=0;i<10;i++)
 	{
 		lng[i]=gps[i];
 	}
+//	sscanf(lng, "%f", &num);
+//	high=(int)(num/100);
+//	num=(num-high*100)/60+high;
+//	sprintf(lng, "%10f\0",num);
+//	//DebugPf(lng);printf("%f\n",num);
 	lng_direction[0]=gps[11];
 	//DebugPf(lng);
-	tp[0]='A';
+	tp[0]='V';
 }
-
+void GSMDATA(void)
+{
+	unsigned char *gsm;
+	unsigned char i;
+	gsm=strstr(Ub,"+CIPGSMLOC:");
+	gsm+=26;
+	for(i=0;i<9;i++)
+	{
+		lat[i]=gsm[i];
+	}
+	lat_direction[0]=gsm[10];
+	gsm+=12;
+	for(i=0;i<10;i++)
+	{
+		lng[i]=gsm[i];
+	}
+	lng_direction[0]=gsm[11];
+	//DebugPf(lng);
+	tp[0]='V';
+}
 //获取电量，存入cbc[]
 void CBCDATA()
 {

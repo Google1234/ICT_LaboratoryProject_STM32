@@ -7,6 +7,7 @@ int Sim_ini(void);
 
 unsigned char GPSVLD();
 void GPSDATA(void);
+void GSMDATA(void);
 void SIM_GPIO_Config(void);
 uint8_t GetKeyCHG();
 uint8_t Key_Scan(GPIO_TypeDef* GPIOx,u16 GPIO_Pin,uint8_t Down_state);
