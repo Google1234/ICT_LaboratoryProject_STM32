@@ -23,7 +23,8 @@ extern unsigned char ip[];
 extern unsigned char pt[];
 
 extern u8 Ub[500];
-
+extern unsigned char lac_value[];
+extern unsigned char cell_id[];
 extern int process_uart2_dmass_data(int len);
 
 static void Delay_MS(u32 nCount_temp);
@@ -139,7 +140,11 @@ int Sim_ini(void)
 	Delay_MS(500);
 	USART2_DMASS("AT+BTHOST=1\r\n",500,100);
 	Delay_MS(500);
-	
+
+
+	USART2_DMASS("AT+CREG=2\n",100,100);//基站
+	Delay_MS(500);
+
 	return 0;
 }
 
@@ -270,22 +275,22 @@ void GPSDATA(void)
 	{
 		lat[i]=gps[i];
 	}
-//	sscanf(lat, "%f", &num);
-//	high=(int)(num/100);
-//	num=(num-high*100)/60+high;
-//	sprintf(lat, "%09f\0",num);
-//	//DebugPf(lat);printf("%f\n",num);
+	sscanf(lat, "%f", &num);
+	high=(int)(num/100);
+	num=(num-high*100)/60+high;
+	sprintf(lat, "%09f\0",num);
+	//DebugPf(lat);printf("%f\n",num);
 	lat_direction[0]=gps[10];
 	gps+=12;
 	for(i=0;i<10;i++)
 	{
 		lng[i]=gps[i];
 	}
-//	sscanf(lng, "%f", &num);
-//	high=(int)(num/100);
-//	num=(num-high*100)/60+high;
-//	sprintf(lng, "%10f\0",num);
-//	//DebugPf(lng);printf("%f\n",num);
+	sscanf(lng, "%f", &num);
+	high=(int)(num/100);
+	num=(num-high*100)/60+high;
+	sprintf(lng, "%10f\0",num);
+	//DebugPf(lng);printf("%f\n",num);
 	lng_direction[0]=gps[11];
 	//DebugPf(lng);
 	tp[0]='V';
@@ -294,21 +299,20 @@ void GSMDATA(void)
 {
 	unsigned char *gsm;
 	unsigned char i;
-	gsm=strstr(Ub,"+CIPGSMLOC:");
-	gsm+=26;
-	for(i=0;i<9;i++)
-	{
-		lat[i]=gsm[i];
-	}
-	lat_direction[0]=gsm[10];
+	USART2_DMASS("AT+CREG?\n",100,100);//基站
+	Delay_MS(500);
+	gsm=strstr(Ub,"+CREG:");
 	gsm+=12;
-	for(i=0;i<10;i++)
+	for(i=0;i<4;i++)
 	{
-		lng[i]=gsm[i];
+		lac_value[i]=gsm[i];
 	}
-	lng_direction[0]=gsm[11];
-	//DebugPf(lng);
-	tp[0]='V';
+	gsm+=7;
+	for(i=0;i<4;i++)
+	{
+		cell_id[i]=gsm[i];
+	}
+	DebugPf(lac_value);DebugPf(cell_id);
 }
 //获取电量，存入cbc[]
 void CBCDATA()

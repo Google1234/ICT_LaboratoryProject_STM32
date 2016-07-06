@@ -68,6 +68,8 @@ unsigned char ip[]="114.215.99.66";  //实验室阿里云
 unsigned char pt[]="4666";
 //unsigned char ip[]="120.27.121.236";  //我的阿里云
 //unsigned char pt[]="50001";
+unsigned char lac_value[]="111E";
+unsigned char cell_id[]="AB52";
 
 unsigned char T_SEND=20;	//TCP发送间隔，30s
 unsigned char T_CBC=10;		//电量检测，10s
@@ -128,40 +130,32 @@ int times=0;
     while(1)
 		{
 			
-			if(flag_send){
-////GSM得到位置
-//				USART2_DMASS("AT+CipGSMLOC=1,1\r\n",500,100);
-//				GSMDATA();
-////		
+			if(flag_send){			
 				flag_send=0;
 				USART2_DMASS("AT+CGPSINF=32\n",100,100);//查询GPRMC数据					
-//				while(GPSVLD()!='A'){
-//					tp[0]='I';
-//					flag_gps=0;
-//					USART2_DMASS("AT+CGPSINF=32\n",100,100);//查询GPRMC数据
-//					delay(10000);
-//				}
-//tesst
-times++;
-//
-				flag_gps=1;		
-				GPSDATA();			//GPS数据提取到lat[],lng[]
+        if(GPSVLD()!='A')
+					{
+						flag_gps=0;
+						GSMDATA();
+					}
+				else
+					{flag_gps=1;
+						GPSDATA();//GPS数据提取到lat[],lng[]		
+				   }
 						
 			//TCP SEND
+				//不要用sizeof，会造成多一位
         memset(send_buff, 0, sizeof(send_buff));
         send_length=0;
-				strncat(send_buff, "#\0",1);send_length+=1;strncat(send_buff, hd,sizeof(hd));send_length+=sizeof(hd); //设备号
+				strncat(send_buff, "#\0",1);send_length+=1;strncat(send_buff, hd,15);send_length+=15; //设备号
 				strncat(send_buff, "#\0",1);send_length+=1;																													  //用户名
 				strncat(send_buff, "#\0",1);send_length+=1;strncat(send_buff, "0\0",1);               send_length+=1; //状态位
-				strncat(send_buff, "#\0",1);send_length+=1;
-																									//tesst
-																										sprintf(num_str, "%04d\0",times);strncat(send_buff, num_str,4);            send_length+=4; //密码
-																										//strncat(send_buff, "0000\0",4);            send_length+=4; //密码				
+				strncat(send_buff, "#\0",1);send_length+=1;strncat(send_buff, "0000\0",4);            send_length+=4; //密码				
 				strncat(send_buff, "#\0",1);send_length+=1;strncat(send_buff, "ACT\0",3);             send_length+=3;	 //信息类型		
 				strncat(send_buff, "#\0",1);send_length+=1;strncat(send_buff, "46007\0",5);           send_length+=5;	 //GSM国家代码		
-				strncat(send_buff, "#\0",1);send_length+=1;strncat(send_buff, "580A4807\0",8);        send_length+=8;	 //基站信息			
-				strncat(send_buff, "#\0",1);send_length+=1;strncat(send_buff, tp,1);               send_length+=1;	 //GPS状态
-				strncat(send_buff, "#\0",1);send_length+=1;strncat(send_buff,lng,10);send_length+=10;	 //GPS 经纬度：116.326400,E,39.990900,N	
+				strncat(send_buff, "#\0",1);send_length+=1;strncat(send_buff, lac_value,4);strncat(send_buff, cell_id,4);send_length+=8;	 //基站信息																								
+				strncat(send_buff, "#\0",1);send_length+=1;strncat(send_buff, tp,1);               send_length+=1;	   //GPS状态
+				strncat(send_buff, "#\0",1);send_length+=1;strncat(send_buff,lng,10);send_length+=10;	                 //GPS 经纬度：116.326400,E,39.990900,N	
         strncat(send_buff, ",\0",1);send_length+=1;strncat(send_buff,lng_direction,1);send_length+=1;
 				strncat(send_buff, ",\0",1);send_length+=1;strncat(send_buff,lat,9);send_length+=9;
 				strncat(send_buff, ",\0",1);send_length+=1;strncat(send_buff,lat_direction,1);send_length+=1;
@@ -169,10 +163,12 @@ times++;
 				strncat(send_buff, "#\0",1);send_length+=1;strncat(send_buff, "20160318\0",8);        send_length+=8;	 //时间	
 				strncat(send_buff, "#\0",1);send_length+=1;strncat(send_buff, "092955\0",6);          send_length+=6;	 //时间					
 				strncat(send_buff, "#\0",1);send_length+=1;strncat(send_buff, "000,0,0,0\0",9);       send_length+=9;	 //运动信息	
-				strncat(send_buff, "#\0",1);send_length+=1;strncat(send_buff, cbc,sizeof(cbc));       send_length+=sizeof(cbc);	 //电量	
+				strncat(send_buff, "#\0",1);send_length+=1;strncat(send_buff, cbc,sizeof(cbc));       send_length+=3;	 //电量	
 				strncat(send_buff, "#\0",1);send_length+=1;	 //结束	
 				send_length+=1; //由于  USART2_SendByte(0x0a)算1位
 				
+				DebugPf(send_buff);printf("%d\n",sizeof(send_buff));
+
 				memset(CMD_buff, 0, sizeof(CMD_buff));
 				strcat(CMD_buff, "AT+CIPSEND=\0");
 				sprintf(num_str, "%03d\0",send_length);
@@ -260,7 +256,9 @@ int process_uart2_dmass_data(int len)
 	}
 	if(strstr(Ub,"3D")){
 	}
-	
+//+CREG: <stat>[,<lac>,<ci>] There is a change in the MT network
+//registration status or a change of the AT+CREG=<n>
+//network cell.	
 }
 /* ----------------------------------------end of file------------------------------------------------ */
 
