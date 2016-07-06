@@ -2,7 +2,7 @@
 ..\..\output\stm32f10x_it.o: ..\..\User\stm32f10x_it.h
 ..\..\output\stm32f10x_it.o: ..\..\Libraries\CMSIS\stm32f10x.h
 ..\..\output\stm32f10x_it.o: ..\..\Libraries\CMSIS\core_cm3.h
-..\..\output\stm32f10x_it.o: G:\ARM\ARMCC\bin\..\include\stdint.h
+..\..\output\stm32f10x_it.o: G:\Keil\ARM\ARMCC\bin\..\include\stdint.h
 ..\..\output\stm32f10x_it.o: ..\..\Libraries\CMSIS\system_stm32f10x.h
 ..\..\output\stm32f10x_it.o: ..\..\User\stm32f10x_conf.h
 ..\..\output\stm32f10x_it.o: ..\..\Libraries\FWlib\inc\stm32f10x_adc.h
@@ -22,7 +22,7 @@
 ..\..\output\stm32f10x_it.o: ..\..\Libraries\FWlib\inc\stm32f10x_tim.h
 ..\..\output\stm32f10x_it.o: ..\..\Libraries\FWlib\inc\stm32f10x_usart.h
 ..\..\output\stm32f10x_it.o: ..\..\Libraries\FWlib\inc\misc.h
-..\..\output\stm32f10x_it.o: G:\ARM\ARMCC\bin\..\include\stdio.h
+..\..\output\stm32f10x_it.o: G:\Keil\ARM\ARMCC\bin\..\include\stdio.h
 ..\..\output\stm32f10x_it.o: ..\..\User\usb\STM32_USB-FS-Device_Driver\inc\usb_lib.h
 ..\..\output\stm32f10x_it.o: ..\..\User\usb\Mass_Storage\inc\hw_config.h
 ..\..\output\stm32f10x_it.o: ..\..\User\usb\STM32_USB-FS-Device_Driver\inc\usb_type.h
@@ -39,4 +39,4 @@
 ..\..\output\stm32f10x_it.o: ..\..\User\adc\bsp_adc.h
 ..\..\output\stm32f10x_it.o: ..\..\User\sim800l\sim800l.h
 ..\..\output\stm32f10x_it.o: ..\..\User\usart\static_init.h
-..\..\output\stm32f10x_it.o: G:\ARM\ARMCC\bin\..\include\String.h
+..\..\output\stm32f10x_it.o: G:\Keil\ARM\ARMCC\bin\..\include\String.h

@@ -1,7 +1,7 @@
 ..\..\output\flash.o: ..\..\User\flash\FLASH.c
 ..\..\output\flash.o: ..\..\Libraries\CMSIS\stm32f10x.h
 ..\..\output\flash.o: ..\..\Libraries\CMSIS\core_cm3.h
-..\..\output\flash.o: G:\ARM\ARMCC\bin\..\include\stdint.h
+..\..\output\flash.o: G:\Keil\ARM\ARMCC\bin\..\include\stdint.h
 ..\..\output\flash.o: ..\..\Libraries\CMSIS\system_stm32f10x.h
 ..\..\output\flash.o: ..\..\User\stm32f10x_conf.h
 ..\..\output\flash.o: ..\..\Libraries\FWlib\inc\stm32f10x_adc.h
@@ -22,5 +22,5 @@
 ..\..\output\flash.o: ..\..\Libraries\FWlib\inc\stm32f10x_usart.h
 ..\..\output\flash.o: ..\..\Libraries\FWlib\inc\misc.h
 ..\..\output\flash.o: ..\..\User\flash\flash.h
-..\..\output\flash.o: G:\ARM\ARMCC\bin\..\include\string.h
-..\..\output\flash.o: G:\ARM\ARMCC\bin\..\include\stdio.h
+..\..\output\flash.o: G:\Keil\ARM\ARMCC\bin\..\include\string.h
+..\..\output\flash.o: G:\Keil\ARM\ARMCC\bin\..\include\stdio.h

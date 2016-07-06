@@ -10,11 +10,12 @@
 #define KEY_ON	0
 #define KEY_OFF	1
 
-extern unsigned char hd[];
 extern unsigned char id[];
 extern unsigned char tp[];
 extern unsigned char lat[];
 extern unsigned char lng[];
+extern unsigned char lat_direction[];
+extern unsigned char lng_direction[];
 extern unsigned char cbc[];
 extern unsigned char end[];
 
@@ -22,7 +23,9 @@ extern unsigned char ip[];
 extern unsigned char pt[];
 
 extern u8 Ub[500];
-
+extern unsigned char lac_value[];
+extern unsigned char cell_id[];
+extern int process_uart2_dmass_data(int len);
 
 static void Delay_MS(u32 nCount_temp);
 
@@ -118,12 +121,12 @@ int Sim_ini(void)
 	Delay_MS(500);
 	USART2_DMASS("AT+CIPQSEND=0\r\n",500,100);
 	Delay_MS(500);
-	USART2_DMASS("AT+CIPSTART=\"TCP\",\"position.iego.net\",10001\r\n",500,100);
-	Delay_MS(500);
+	USART2_DMASS("AT+CIPSTART=\"TCP\",\"114.215.99.66\",4666\r\n",500,100); //实验室阿里云
+	//USART2_DMASS("AT+CIPSTART=\"TCP\",\"120.27.121.236\",50001\r\n",500,100); //我的阿里云
+  Delay_MS(500);
 	USART2_DMASS(NULL,5000,100);//发送一个NULL，用于读取USART2数据
 	Delay_MS(500);
-//
-	USART2_DMASS("AT+CGPSPWR=1\r\n",500,100);
+	USART2_DMASS("AT+CGPSPWR=1\r\n",500,100);//开启GPS供电
 	Delay_MS(2000);
 	USART2_DMASS("AT+CGPSRST=0\r\n",500,100);
 	Delay_MS(2000);
@@ -137,7 +140,11 @@ int Sim_ini(void)
 	Delay_MS(500);
 	USART2_DMASS("AT+BTHOST=1\r\n",500,100);
 	Delay_MS(500);
-	
+
+
+	USART2_DMASS("AT+CREG=2\n",100,100);//基站
+	Delay_MS(500);
+
 	return 0;
 }
 
@@ -221,13 +228,8 @@ int USART2_DMASS(u8* Data,uint16_t BeTime,uint16_t AfTime)
 					
 		USART2_RX_Buffer_Clear();
 			
-//通过串口1显示				
-			DebugPf("USART2 Receive=%d\r\n",RecLen);
-			for(i=0;i<RecLen;i++){
-				DebugPf("%c",Ub[i]);
-			}
-			DebugPf("\r\n");
-			
+//处理接收到的数据				
+			process_uart2_dmass_data(RecLen);
 		return RecLen;	
 		
 }
@@ -265,26 +267,53 @@ void GPSDATA(void)
 {
 	unsigned char *gps;
 	unsigned char i;
-
+  float num=0.0;
+	int high=0;
 	gps=strstr(Ub,"+CGPSINF:");
-
 	gps+=26;
 	for(i=0;i<9;i++)
 	{
 		lat[i]=gps[i];
 	}
-//	DebugPf(lat);
-	
+	sscanf(lat, "%f", &num);
+	high=(int)(num/100);
+	num=(num-high*100)/60+high;
+	sprintf(lat, "%09f\0",num);
+	//DebugPf(lat);printf("%f\n",num);
+	lat_direction[0]=gps[10];
 	gps+=12;
 	for(i=0;i<10;i++)
 	{
 		lng[i]=gps[i];
 	}
-//	DebugPf(lng);
-	
-	tp[0]='A';
+	sscanf(lng, "%f", &num);
+	high=(int)(num/100);
+	num=(num-high*100)/60+high;
+	sprintf(lng, "%10f\0",num);
+	//DebugPf(lng);printf("%f\n",num);
+	lng_direction[0]=gps[11];
+	//DebugPf(lng);
+	tp[0]='V';
 }
-
+void GSMDATA(void)
+{
+	unsigned char *gsm;
+	unsigned char i;
+	USART2_DMASS("AT+CREG?\n",100,100);//基站
+	Delay_MS(500);
+	gsm=strstr(Ub,"+CREG:");
+	gsm+=12;
+	for(i=0;i<4;i++)
+	{
+		lac_value[i]=gsm[i];
+	}
+	gsm+=7;
+	for(i=0;i<4;i++)
+	{
+		cell_id[i]=gsm[i];
+	}
+	DebugPf(lac_value);DebugPf(cell_id);
+}
 //获取电量，存入cbc[]
 void CBCDATA()
 {
