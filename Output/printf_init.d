@@ -2,7 +2,7 @@
 ..\..\output\printf_init.o: ..\..\User\usart\printf_init.h
 ..\..\output\printf_init.o: ..\..\Libraries\CMSIS\stm32f10x.h
 ..\..\output\printf_init.o: ..\..\Libraries\CMSIS\core_cm3.h
-..\..\output\printf_init.o: G:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+..\..\output\printf_init.o: G:\ARM\ARMCC\bin\..\include\stdint.h
 ..\..\output\printf_init.o: ..\..\Libraries\CMSIS\system_stm32f10x.h
 ..\..\output\printf_init.o: ..\..\User\stm32f10x_conf.h
 ..\..\output\printf_init.o: ..\..\Libraries\FWlib\inc\stm32f10x_adc.h
@@ -22,4 +22,4 @@
 ..\..\output\printf_init.o: ..\..\Libraries\FWlib\inc\stm32f10x_tim.h
 ..\..\output\printf_init.o: ..\..\Libraries\FWlib\inc\stm32f10x_usart.h
 ..\..\output\printf_init.o: ..\..\Libraries\FWlib\inc\misc.h
-..\..\output\printf_init.o: G:\Keil\ARM\ARMCC\bin\..\include\stdio.h
+..\..\output\printf_init.o: G:\ARM\ARMCC\bin\..\include\stdio.h

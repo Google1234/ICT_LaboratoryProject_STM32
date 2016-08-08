@@ -2,7 +2,7 @@
 ..\..\output\bsp_usart2.o: ..\..\User\usart\USART2_init.h
 ..\..\output\bsp_usart2.o: ..\..\Libraries\CMSIS\stm32f10x.h
 ..\..\output\bsp_usart2.o: ..\..\Libraries\CMSIS\core_cm3.h
-..\..\output\bsp_usart2.o: G:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+..\..\output\bsp_usart2.o: G:\ARM\ARMCC\bin\..\include\stdint.h
 ..\..\output\bsp_usart2.o: ..\..\Libraries\CMSIS\system_stm32f10x.h
 ..\..\output\bsp_usart2.o: ..\..\User\stm32f10x_conf.h
 ..\..\output\bsp_usart2.o: ..\..\Libraries\FWlib\inc\stm32f10x_adc.h
@@ -23,5 +23,5 @@
 ..\..\output\bsp_usart2.o: ..\..\Libraries\FWlib\inc\stm32f10x_usart.h
 ..\..\output\bsp_usart2.o: ..\..\Libraries\FWlib\inc\misc.h
 ..\..\output\bsp_usart2.o: ..\..\User\usart\static_init.h
-..\..\output\bsp_usart2.o: G:\Keil\ARM\ARMCC\bin\..\include\String.h
-..\..\output\bsp_usart2.o: G:\Keil\ARM\ARMCC\bin\..\include\stdio.h
+..\..\output\bsp_usart2.o: G:\ARM\ARMCC\bin\..\include\String.h
+..\..\output\bsp_usart2.o: G:\ARM\ARMCC\bin\..\include\stdio.h

@@ -1,6 +1,6 @@
 ..\..\output\main.o: ..\..\User\main.c
 ..\..\output\main.o: ..\..\User\iso\bsp_iso_test.h
-..\..\output\main.o: G:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+..\..\output\main.o: G:\ARM\ARMCC\bin\..\include\stdint.h
 ..\..\output\main.o: ..\..\User\Led\bsp_led.h
 ..\..\output\main.o: ..\..\Libraries\CMSIS\stm32f10x.h
 ..\..\output\main.o: ..\..\Libraries\CMSIS\core_cm3.h
@@ -28,6 +28,6 @@
 ..\..\output\main.o: ..\..\User\flash\FLASH.h
 ..\..\output\main.o: ..\..\User\sim800l\SIM800L.h
 ..\..\output\main.o: ..\..\User\usart\static_init.h
-..\..\output\main.o: G:\Keil\ARM\ARMCC\bin\..\include\String.h
-..\..\output\main.o: G:\Keil\ARM\ARMCC\bin\..\include\stdio.h
+..\..\output\main.o: G:\ARM\ARMCC\bin\..\include\String.h
+..\..\output\main.o: G:\ARM\ARMCC\bin\..\include\stdio.h
 ..\..\output\main.o: ..\..\User\usart\USART2_init.h

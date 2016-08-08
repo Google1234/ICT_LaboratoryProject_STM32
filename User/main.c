@@ -46,7 +46,7 @@ bool flag_send;//TCP发送标识
 bool flag_cbc;	//定时电量检测标识
 bool flag_chg;//充电标识
 bool flag_gps;//GPS OK标识
-
+bool flag_call=0;
 unsigned char BUFRX1[255];
 unsigned char BUFRX2[255];
 unsigned char BUFTX1[255];
@@ -124,9 +124,12 @@ int times=0;
 		flag_cbc=0;
 		flag_gps=0;
 		flag_cbc=0;
-		flag_chg=0;
+		flag_chg=0;	
 	
 
+    USART2_DMASS("AT+CLVL=88\n",100,100);			//外放音量
+		USART2_DMASS("ATD17701309542;\n",100,100);//测试电话功能
+		delay(20000);delay(20000);delay(20000);delay(20000);delay(20000);delay(20000);
     while(1)
 		{
 			
@@ -248,8 +251,15 @@ int process_uart2_dmass_data(int len)
 	for(i=0;i<len;i++){
 		DebugPf("%c",Ub[i]);
 	}
+	if(strstr(Ub,"RING")){       //回复电话
+		  memset(Ub, 0, sizeof(Ub));//清空避免再次进入循环
+      USART2_DMASS("ATL9\n",100,100);//开启扬声器 ，没有效果
+			USART2_DMASS("ATA\n",100,100);
+      flag_call=1;
+		
+	}
 	if(strstr(Ub,"Fix")){
-
+      
 	}
 	if(strstr(Ub,"2D")){
 
