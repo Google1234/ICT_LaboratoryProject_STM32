@@ -1,10 +1,10 @@
 ..\..\output\sim800l.o: ..\..\User\sim800l\SIM800L.C
-..\..\output\sim800l.o: G:\ARM\ARMCC\bin\..\include\stddef.h
-..\..\output\sim800l.o: G:\ARM\ARMCC\bin\..\include\stdlib.h
+..\..\output\sim800l.o: G:\Keil\ARM\ARMCC\bin\..\include\stddef.h
+..\..\output\sim800l.o: G:\Keil\ARM\ARMCC\bin\..\include\stdlib.h
 ..\..\output\sim800l.o: ..\..\User\usart\USART2_init.h
 ..\..\output\sim800l.o: ..\..\Libraries\CMSIS\stm32f10x.h
 ..\..\output\sim800l.o: ..\..\Libraries\CMSIS\core_cm3.h
-..\..\output\sim800l.o: G:\ARM\ARMCC\bin\..\include\stdint.h
+..\..\output\sim800l.o: G:\Keil\ARM\ARMCC\bin\..\include\stdint.h
 ..\..\output\sim800l.o: ..\..\Libraries\CMSIS\system_stm32f10x.h
 ..\..\output\sim800l.o: ..\..\User\stm32f10x_conf.h
 ..\..\output\sim800l.o: ..\..\Libraries\FWlib\inc\stm32f10x_adc.h
@@ -25,6 +25,6 @@
 ..\..\output\sim800l.o: ..\..\Libraries\FWlib\inc\stm32f10x_usart.h
 ..\..\output\sim800l.o: ..\..\Libraries\FWlib\inc\misc.h
 ..\..\output\sim800l.o: ..\..\User\usart\static_init.h
-..\..\output\sim800l.o: G:\ARM\ARMCC\bin\..\include\String.h
-..\..\output\sim800l.o: G:\ARM\ARMCC\bin\..\include\stdio.h
+..\..\output\sim800l.o: G:\Keil\ARM\ARMCC\bin\..\include\String.h
+..\..\output\sim800l.o: G:\Keil\ARM\ARMCC\bin\..\include\stdio.h
 ..\..\output\sim800l.o: ..\..\User\sim800l\SIM800L.h

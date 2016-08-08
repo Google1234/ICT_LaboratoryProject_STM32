@@ -2,7 +2,7 @@
 ..\..\output\timer.o: ..\..\User\timer\TIMER.h
 ..\..\output\timer.o: ..\..\Libraries\CMSIS\stm32f10x.h
 ..\..\output\timer.o: ..\..\Libraries\CMSIS\core_cm3.h
-..\..\output\timer.o: G:\ARM\ARMCC\bin\..\include\stdint.h
+..\..\output\timer.o: G:\Keil\ARM\ARMCC\bin\..\include\stdint.h
 ..\..\output\timer.o: ..\..\Libraries\CMSIS\system_stm32f10x.h
 ..\..\output\timer.o: ..\..\User\stm32f10x_conf.h
 ..\..\output\timer.o: ..\..\Libraries\FWlib\inc\stm32f10x_adc.h

@@ -105,16 +105,16 @@ Section Cross References
     main.o(i.main) refers to printfa.o(i.__0printf) for __2printf
     main.o(i.main) refers to sim800l.o(i.Sim_ini) for Sim_ini
     main.o(i.main) refers to sim800l.o(i.USART2_DMASS) for USART2_DMASS
-    main.o(i.main) refers to sim800l.o(i.GPSVLD) for GPSVLD
-    main.o(i.main) refers to sim800l.o(i.GSMDATA) for GSMDATA
-    main.o(i.main) refers to sim800l.o(i.GPSDATA) for GPSDATA
     main.o(i.main) refers to memseta.o(.text) for __aeabi_memclr4
-    main.o(i.main) refers to strncat.o(.text) for strncat
     main.o(i.main) refers to strcat.o(.text) for strcat
-    main.o(i.main) refers to printfa.o(i.__0sprintf) for __2sprintf
     main.o(i.main) refers to strstr.o(.text) for strstr
     main.o(i.main) refers to sim800l.o(i.USART2_DMAS) for USART2_DMAS
     main.o(i.main) refers to bsp_usart2.o(i.USART2_SendByte) for USART2_SendByte
+    main.o(i.main) refers to sim800l.o(i.GPSVLD) for GPSVLD
+    main.o(i.main) refers to sim800l.o(i.GSMDATA) for GSMDATA
+    main.o(i.main) refers to sim800l.o(i.GPSDATA) for GPSDATA
+    main.o(i.main) refers to strncat.o(.text) for strncat
+    main.o(i.main) refers to printfa.o(i.__0sprintf) for __2sprintf
     main.o(i.main) refers to sim800l.o(i.CBCDATA) for CBCDATA
     main.o(i.main) refers to main.o(.data) for .data
     main.o(i.main) refers to main.o(.bss) for .bss
@@ -1397,8 +1397,8 @@ Image Symbol Table
     delay                                    0x08003745   Thumb Code    28  main.o(i.delay)
     i.fputc                                  0x08003760   Section        0  printf_init.o(i.fputc)
     i.main                                   0x08003788   Section        0  main.o(i.main)
-    i.process_uart2_dmass_data               0x08003b5c   Section        0  main.o(i.process_uart2_dmass_data)
-    .constdata                               0x08003bf0   Section       64  ctype_c.o(.constdata)
+    i.process_uart2_dmass_data               0x08003c24   Section        0  main.o(i.process_uart2_dmass_data)
+    .constdata                               0x08003cb8   Section       64  ctype_c.o(.constdata)
     .data                                    0x20000000   Section       20  stm32f10x_rcc.o(.data)
     ADCPrescTable                            0x20000000   Data           4  stm32f10x_rcc.o(.data)
     APBAHBPrescTable                         0x20000004   Data          16  stm32f10x_rcc.o(.data)
@@ -1745,11 +1745,11 @@ Image Symbol Table
     __scatterload_zeroinit                   0x08002e79   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
     _is_digit                                0x08002fe5   Thumb Code    14  scanf_fp.o(i._is_digit)
     fputc                                    0x08003761   Thumb Code    34  printf_init.o(i.fputc)
-    main                                     0x08003789   Thumb Code   768  main.o(i.main)
-    process_uart2_dmass_data                 0x08003b5d   Thumb Code    98  main.o(i.process_uart2_dmass_data)
-    __ctype_categories                       0x08003bf0   Data          64  ctype_c.o(.constdata)
-    Region$$Table$$Base                      0x08003c30   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x08003c50   Number         0  anon$$obj.o(Region$$Table)
+    main                                     0x08003789   Thumb Code   886  main.o(i.main)
+    process_uart2_dmass_data                 0x08003c25   Thumb Code    98  main.o(i.process_uart2_dmass_data)
+    __ctype_categories                       0x08003cb8   Data          64  ctype_c.o(.constdata)
+    Region$$Table$$Base                      0x08003cf8   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08003d18   Number         0  anon$$obj.o(Region$$Table)
     FLAG_BLE_CTS0                            0x20000014   Data           1  main.o(.data)
     FLAG_BLE_CTS1                            0x20000015   Data           1  main.o(.data)
     flag_call                                0x20000016   Data           1  main.o(.data)
@@ -1787,9 +1787,9 @@ Memory Map of the image
 
   Image Entry point : 0x08000131
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00003d04, Max: 0x00080000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00003dcc, Max: 0x00080000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Base: 0x08000000, Size: 0x00003c50, Max: 0x00080000, ABSOLUTE)
+    Execution Region ER_IROM1 (Base: 0x08000000, Size: 0x00003d18, Max: 0x00080000, ABSOLUTE)
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -1995,10 +1995,10 @@ Memory Map of the image
     0x0800373a   0x0000000a   Code   RO         4156    i._sputc            mc_w.l(printfa.o)
     0x08003744   0x0000001c   Code   RO         3109    i.delay             main.o
     0x08003760   0x00000028   Code   RO         3655    i.fputc             printf_init.o
-    0x08003788   0x000003d4   Code   RO         3110    i.main              main.o
-    0x08003b5c   0x00000094   Code   RO         3111    i.process_uart2_dmass_data  main.o
-    0x08003bf0   0x00000040   Data   RO         4242    .constdata          mc_w.l(ctype_c.o)
-    0x08003c30   0x00000020   Data   RO         4244    Region$$Table       anon$$obj.o
+    0x08003788   0x0000049c   Code   RO         3110    i.main              main.o
+    0x08003c24   0x00000094   Code   RO         3111    i.process_uart2_dmass_data  main.o
+    0x08003cb8   0x00000040   Data   RO         4242    .constdata          mc_w.l(ctype_c.o)
+    0x08003cf8   0x00000020   Data   RO         4244    Region$$Table       anon$$obj.o
 
 
     Execution Region RW_IRAM1 (Base: 0x20000000, Size: 0x00000c10, Max: 0x00010000, ABSOLUTE)
@@ -2036,11 +2036,11 @@ Image component sizes
         20          4          0          4          0        896   bsp_systick.o
        586         68          0         32        628       5608   bsp_usart1.o
        722         98          0         32        756       7587   bsp_usart2.o
-         0          0          0          0          0       4196   core_cm3.o
-      1288        272          0         75        500       4509   main.o
+         0          0          0          0          0       4212   core_cm3.o
+      1488        354          0         75        500       4577   main.o
        120         18          0          0          0       1511   misc.o
-       116         38          0          8          0       2703   printf_init.o
-      1912        680          0          0          0       7106   sim800l.o
+       116         38          0          8          0       2715   printf_init.o
+      1912        680          0          0          0       7114   sim800l.o
         36          8        304          0       1024        824   startup_stm32f10x_hd.o
        416         28          0          0          0       5233   stm32f10x_dma.o
         56         16          0          0          0       1573   stm32f10x_exti.o
@@ -2051,11 +2051,11 @@ Image component sizes
         64         16          0          0          0       1516   stm32f10x_rtc.o
        844         90          0          0          0      13612   stm32f10x_tim.o
        396          6          0          0          0       7402   stm32f10x_usart.o
-       260         26          0          0          0     259845   system_stm32f10x.o
+       260         26          0          0          0     259849   system_stm32f10x.o
        346         10          0          8          0       1952   timer.o
 
     ----------------------------------------------------------------------
-      8704       1570        336        180       2908     350712   Object Totals
+      8904       1652        336        180       2908     350820   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         24          0          0          1          0          0   (incl. Padding)
 
@@ -2129,15 +2129,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     15040       1724        400        180       2908     345672   Grand Totals
-     15040       1724        400        180       2908     345672   ELF Image Totals
-     15040       1724        400        180          0          0   ROM Totals
+     15240       1806        400        180       2908     345780   Grand Totals
+     15240       1806        400        180       2908     345780   ELF Image Totals
+     15240       1806        400        180          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                15440 (  15.08kB)
+    Total RO  Size (Code + RO Data)                15640 (  15.27kB)
     Total RW  Size (RW Data + ZI Data)              3088 (   3.02kB)
-    Total ROM Size (Code + RO Data + RW Data)      15620 (  15.25kB)
+    Total ROM Size (Code + RO Data + RW Data)      15820 (  15.45kB)
 
 ==============================================================================
 

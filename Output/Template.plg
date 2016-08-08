@@ -7,3 +7,1098 @@ G:\github\ICT_LaboratoryProject_STM32\Project\RVMDKú¿uv4ú®\iSO-STM32.uvproj
 Project File Date:  07/06/2016
 
 <h2>Output:</h2>
+Rebuild target 'ISO-MINI????'
+assembling startup_stm32f10x_hd.s...
+compiling core_cm3.c...
+compiling system_stm32f10x.c...
+compiling misc.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_cec.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_wwdg.c...
+compiling main.c...
+..\..\User\sim800l\SIM800L.h(8): warning:  #1295-D: Deprecated declaration GPSVLD - give arg types
+..\..\User\sim800l\SIM800L.h(12): warning:  #1295-D: Deprecated declaration GetKeyCHG - give arg types
+..\..\User\sim800l\SIM800L.h(15): warning:  #1295-D: Deprecated declaration CBCDATA - give arg types
+..\..\User\main.c(28): warning:  #1295-D: Deprecated declaration GetId - give arg types
+..\..\User\main.c(41): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(42): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(43): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(49): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(123): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(124): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(125): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(126): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(127): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(155): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(159): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(163): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(171): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(171): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(171): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(172): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(173): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(173): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(174): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(174): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(175): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(175): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(176): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(176): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(177): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(177): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(177): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(177): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(177): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(178): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(178): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(178): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(179): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(179): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(179): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(180): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(180): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(180): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(181): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(181): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(181): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(182): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(182): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(182): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(183): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(183): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(184): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(184): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(185): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(185): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(186): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(186): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(187): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(187): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(187): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(188): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(191): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(194): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(196): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(197): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(199): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\main.c(210): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(214): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\main.c(151): warning:  #128-D: loop is not reachable
+..\..\User\main.c(93): warning:  #177-D: variable "times" was declared but never referenced
+..\..\User\main.c(95): warning:  #177-D: variable "s" was declared but never referenced
+..\..\User\main.c(256): warning:  #223-D: function "USART1_SendByte" declared implicitly
+..\..\User\main.c(238): warning:  #177-D: variable "i_d" was declared but never referenced
+..\..\User\main.c(272): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\main.c(276): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(278): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\main.c(281): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\main.c(284): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\main.c(289): warning:  #940-D: missing return statement at end of non-void function "process_uart2_dmass_data"
+compiling stm32f10x_it.c...
+..\..\User\sim800l\sim800l.h(8): warning:  #1295-D: Deprecated declaration GPSVLD - give arg types
+..\..\User\sim800l\sim800l.h(12): warning:  #1295-D: Deprecated declaration GetKeyCHG - give arg types
+..\..\User\sim800l\sim800l.h(15): warning:  #1295-D: Deprecated declaration CBCDATA - give arg types
+..\..\User\stm32f10x_it.c(187): warning:  #177-D: variable "i" was declared but never referenced
+..\..\User\stm32f10x_it.c(234): warning:  #188-D: enumerated type mixed with another type
+..\..\User\stm32f10x_it.c(240): warning:  #188-D: enumerated type mixed with another type
+..\..\User\stm32f10x_it.c(241): warning:  #188-D: enumerated type mixed with another type
+..\..\User\stm32f10x_it.c(277): warning:  #188-D: enumerated type mixed with another type
+..\..\User\stm32f10x_it.c(283): warning:  #188-D: enumerated type mixed with another type
+compiling bsp_iso_test.c...
+..\..\User\iso\bsp_iso_test.c(55): warning:  #177-D: variable "k" was declared but never referenced
+..\..\User\iso\bsp_iso_test.c(41): warning:  #177-D: function "delay" was declared but never referenced
+compiling bsp_usart1.c...
+compiling bsp_usart2.c...
+compiling printf_init.c...
+compiling bsp_SysTick.c...
+compiling bsp_led.c...
+..\..\User\key\bsp_key.h(15): warning:  #1295-D: Deprecated declaration GetKey - give arg types
+..\..\User\key\bsp_key.h(16): warning:  #1295-D: Deprecated declaration GetKey1L - give arg types
+..\..\User\key\bsp_key.h(17): warning:  #1295-D: Deprecated declaration GetKey1R - give arg types
+..\..\User\key\bsp_key.h(18): warning:  #1295-D: Deprecated declaration GetKey2L - give arg types
+..\..\User\key\bsp_key.h(19): warning:  #1295-D: Deprecated declaration GetKey2R - give arg types
+..\..\User\key\bsp_key.h(20): warning:  #1295-D: Deprecated declaration GetKey3L - give arg types
+..\..\User\key\bsp_key.h(21): warning:  #1295-D: Deprecated declaration GetKey3R - give arg types
+..\..\User\key\bsp_key.h(22): warning:  #1295-D: Deprecated declaration GetKey4L - give arg types
+..\..\User\key\bsp_key.h(23): warning:  #1295-D: Deprecated declaration GetKey4R - give arg types
+..\..\User\led\bsp_led.c(56): warning:  #177-D: function "delay" was declared but never referenced
+compiling TIMER.c...
+compiling FLASH.c...
+compiling SIM800L.C...
+..\..\User\sim800l\SIM800L.h(8): warning:  #1295-D: Deprecated declaration GPSVLD - give arg types
+..\..\User\sim800l\SIM800L.h(12): warning:  #1295-D: Deprecated declaration GetKeyCHG - give arg types
+..\..\User\sim800l\SIM800L.h(15): warning:  #1295-D: Deprecated declaration CBCDATA - give arg types
+..\..\User\sim800l\SIM800L.C(35): warning:  #177-D: variable "i" was declared but never referenced
+..\..\User\sim800l\SIM800L.C(36): warning:  #177-D: variable "RecLen" was declared but never referenced
+..\..\User\sim800l\SIM800L.C(37): warning:  #177-D: variable "Ubyte" was declared but never referenced
+..\..\User\sim800l\SIM800L.C(209): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\sim800l\SIM800L.C(202): warning:  #177-D: variable "i" was declared but never referenced
+..\..\User\sim800l\SIM800L.C(204): warning:  #177-D: variable "x" was declared but never referenced
+..\..\User\sim800l\SIM800L.C(204): warning:  #177-D: variable "y" was declared but never referenced
+..\..\User\sim800l\SIM800L.C(260): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\sim800l\SIM800L.C(260): warning:  #513-D: a value of type "char *" cannot be assigned to an entity of type "unsigned char *"
+..\..\User\sim800l\SIM800L.C(273): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\sim800l\SIM800L.C(273): warning:  #513-D: a value of type "char *" cannot be assigned to an entity of type "unsigned char *"
+..\..\User\sim800l\SIM800L.C(279): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\sim800l\SIM800L.C(282): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\sim800l\SIM800L.C(290): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\sim800l\SIM800L.C(293): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\sim800l\SIM800L.C(305): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\sim800l\SIM800L.C(305): warning:  #513-D: a value of type "char *" cannot be assigned to an entity of type "unsigned char *"
+..\..\User\sim800l\SIM800L.C(316): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\sim800l\SIM800L.C(316): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\sim800l\SIM800L.C(324): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\sim800l\SIM800L.C(324): warning:  #513-D: a value of type "char *" cannot be assigned to an entity of type "unsigned char *"
+linking...
+Program Size: Code=11252 RO-data=336 RW-data=180 ZI-data=2908  
+FromELF: creating hex file...
+"..\..\Output\Template.axf" - 0 Errors, 123 Warning(s).
+Load "..\\..\\Output\\Template.axf" 
+Set JLink Project File to "G:\github\ICT_LaboratoryProject_STM32\Project\RVMDKú¿uv4ú®\JLinkSettings.ini"
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.68a, compiled Apr 12 2013 13:26:50
+Firmware: J-Link V9 compiled Jan 29 2015 11:26:22
+Hardware: V9.20
+Feature(s) : GDB, RDI, FlashBP, FlashDL, JFlash 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.295V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 0, TMS: 1, TRES: 1, TRST: 0
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 500 kHz
+ 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Load "..\\..\\Output\\Template.axf" 
+Set JLink Project File to "G:\github\ICT_LaboratoryProject_STM32\Project\RVMDKú¿uv4ú®\JLinkSettings.ini"
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.68a, compiled Apr 12 2013 13:26:50
+Firmware: J-Link V9 compiled Jan 29 2015 11:26:22
+Hardware: V9.20
+Feature(s) : GDB, RDI, FlashBP, FlashDL, JFlash 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.295V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 0, TMS: 1, TRES: 1, TRST: 0
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 500 kHz
+ 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Load "..\\..\\Output\\Template.axf" 
+Load "..\\..\\Output\\Template.axf" 
+Set JLink Project File to "G:\github\ICT_LaboratoryProject_STM32\Project\RVMDKú¿uv4ú®\JLinkSettings.ini"
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.68a, compiled Apr 12 2013 13:26:50
+Firmware: J-Link V9 compiled Jan 29 2015 11:26:22
+Hardware: V9.20
+Feature(s) : GDB, RDI, FlashBP, FlashDL, JFlash 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.296V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 0, TMS: 1, TRES: 1, TRST: 0
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 500 kHz
+ 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Rebuild target 'ISO-MINI????'
+assembling startup_stm32f10x_hd.s...
+compiling core_cm3.c...
+compiling system_stm32f10x.c...
+compiling misc.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_cec.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_wwdg.c...
+compiling main.c...
+..\..\User\sim800l\SIM800L.h(8): warning:  #1295-D: Deprecated declaration GPSVLD - give arg types
+..\..\User\sim800l\SIM800L.h(12): warning:  #1295-D: Deprecated declaration GetKeyCHG - give arg types
+..\..\User\sim800l\SIM800L.h(15): warning:  #1295-D: Deprecated declaration CBCDATA - give arg types
+..\..\User\main.c(28): warning:  #1295-D: Deprecated declaration GetId - give arg types
+..\..\User\main.c(41): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(42): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(43): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(49): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(123): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(124): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(125): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(126): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(127): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(147): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(148): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(150): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\main.c(152): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(165): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(169): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(173): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(181): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(181): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(181): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(182): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(183): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(183): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(184): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(184): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(185): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(185): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(186): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(186): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(187): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(187): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(187): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(187): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(187): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(188): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(188): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(188): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(189): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(189): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(189): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(190): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(190): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(190): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(191): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(191): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(191): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(192): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(192): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(192): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(193): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(193): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(194): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(194): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(195): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(195): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(196): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(196): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(197): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(197): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(197): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(198): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(201): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(204): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(206): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(207): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(209): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\main.c(220): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(224): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\main.c(161): warning:  #128-D: loop is not reachable
+..\..\User\main.c(93): warning:  #177-D: variable "times" was declared but never referenced
+..\..\User\main.c(95): warning:  #177-D: variable "s" was declared but never referenced
+..\..\User\main.c(266): warning:  #223-D: function "USART1_SendByte" declared implicitly
+..\..\User\main.c(248): warning:  #177-D: variable "i_d" was declared but never referenced
+..\..\User\main.c(282): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\main.c(286): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(288): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\main.c(291): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\main.c(294): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\main.c(299): warning:  #940-D: missing return statement at end of non-void function "process_uart2_dmass_data"
+compiling stm32f10x_it.c...
+..\..\User\sim800l\sim800l.h(8): warning:  #1295-D: Deprecated declaration GPSVLD - give arg types
+..\..\User\sim800l\sim800l.h(12): warning:  #1295-D: Deprecated declaration GetKeyCHG - give arg types
+..\..\User\sim800l\sim800l.h(15): warning:  #1295-D: Deprecated declaration CBCDATA - give arg types
+..\..\User\stm32f10x_it.c(187): warning:  #177-D: variable "i" was declared but never referenced
+..\..\User\stm32f10x_it.c(234): warning:  #188-D: enumerated type mixed with another type
+..\..\User\stm32f10x_it.c(240): warning:  #188-D: enumerated type mixed with another type
+..\..\User\stm32f10x_it.c(241): warning:  #188-D: enumerated type mixed with another type
+..\..\User\stm32f10x_it.c(277): warning:  #188-D: enumerated type mixed with another type
+..\..\User\stm32f10x_it.c(283): warning:  #188-D: enumerated type mixed with another type
+compiling bsp_iso_test.c...
+..\..\User\iso\bsp_iso_test.c(55): warning:  #177-D: variable "k" was declared but never referenced
+..\..\User\iso\bsp_iso_test.c(41): warning:  #177-D: function "delay" was declared but never referenced
+compiling bsp_usart1.c...
+compiling bsp_usart2.c...
+compiling printf_init.c...
+compiling bsp_SysTick.c...
+compiling bsp_led.c...
+..\..\User\key\bsp_key.h(15): warning:  #1295-D: Deprecated declaration GetKey - give arg types
+..\..\User\key\bsp_key.h(16): warning:  #1295-D: Deprecated declaration GetKey1L - give arg types
+..\..\User\key\bsp_key.h(17): warning:  #1295-D: Deprecated declaration GetKey1R - give arg types
+..\..\User\key\bsp_key.h(18): warning:  #1295-D: Deprecated declaration GetKey2L - give arg types
+..\..\User\key\bsp_key.h(19): warning:  #1295-D: Deprecated declaration GetKey2R - give arg types
+..\..\User\key\bsp_key.h(20): warning:  #1295-D: Deprecated declaration GetKey3L - give arg types
+..\..\User\key\bsp_key.h(21): warning:  #1295-D: Deprecated declaration GetKey3R - give arg types
+..\..\User\key\bsp_key.h(22): warning:  #1295-D: Deprecated declaration GetKey4L - give arg types
+..\..\User\key\bsp_key.h(23): warning:  #1295-D: Deprecated declaration GetKey4R - give arg types
+..\..\User\led\bsp_led.c(56): warning:  #177-D: function "delay" was declared but never referenced
+compiling TIMER.c...
+compiling FLASH.c...
+compiling SIM800L.C...
+..\..\User\sim800l\SIM800L.h(8): warning:  #1295-D: Deprecated declaration GPSVLD - give arg types
+..\..\User\sim800l\SIM800L.h(12): warning:  #1295-D: Deprecated declaration GetKeyCHG - give arg types
+..\..\User\sim800l\SIM800L.h(15): warning:  #1295-D: Deprecated declaration CBCDATA - give arg types
+..\..\User\sim800l\SIM800L.C(35): warning:  #177-D: variable "i" was declared but never referenced
+..\..\User\sim800l\SIM800L.C(36): warning:  #177-D: variable "RecLen" was declared but never referenced
+..\..\User\sim800l\SIM800L.C(37): warning:  #177-D: variable "Ubyte" was declared but never referenced
+..\..\User\sim800l\SIM800L.C(209): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\sim800l\SIM800L.C(202): warning:  #177-D: variable "i" was declared but never referenced
+..\..\User\sim800l\SIM800L.C(204): warning:  #177-D: variable "x" was declared but never referenced
+..\..\User\sim800l\SIM800L.C(204): warning:  #177-D: variable "y" was declared but never referenced
+..\..\User\sim800l\SIM800L.C(260): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\sim800l\SIM800L.C(260): warning:  #513-D: a value of type "char *" cannot be assigned to an entity of type "unsigned char *"
+..\..\User\sim800l\SIM800L.C(273): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\sim800l\SIM800L.C(273): warning:  #513-D: a value of type "char *" cannot be assigned to an entity of type "unsigned char *"
+..\..\User\sim800l\SIM800L.C(279): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\sim800l\SIM800L.C(282): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\sim800l\SIM800L.C(290): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\sim800l\SIM800L.C(293): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\sim800l\SIM800L.C(305): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\sim800l\SIM800L.C(305): warning:  #513-D: a value of type "char *" cannot be assigned to an entity of type "unsigned char *"
+..\..\User\sim800l\SIM800L.C(316): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\sim800l\SIM800L.C(316): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\sim800l\SIM800L.C(324): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\sim800l\SIM800L.C(324): warning:  #513-D: a value of type "char *" cannot be assigned to an entity of type "unsigned char *"
+linking...
+Program Size: Code=11464 RO-data=336 RW-data=180 ZI-data=2908  
+FromELF: creating hex file...
+"..\..\Output\Template.axf" - 0 Errors, 127 Warning(s).
+Load "..\\..\\Output\\Template.axf" 
+Set JLink Project File to "G:\github\ICT_LaboratoryProject_STM32\Project\RVMDKú¿uv4ú®\JLinkSettings.ini"
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.68a, compiled Apr 12 2013 13:26:50
+Firmware: J-Link V9 compiled Jan 29 2015 11:26:22
+Hardware: V9.20
+Feature(s) : GDB, RDI, FlashBP, FlashDL, JFlash 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.293V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 0, TMS: 1, TRES: 1, TRST: 0
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 500 kHz
+ 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'ISO-MINI????'
+compiling main.c...
+..\..\User\sim800l\SIM800L.h(8): warning:  #1295-D: Deprecated declaration GPSVLD - give arg types
+..\..\User\sim800l\SIM800L.h(12): warning:  #1295-D: Deprecated declaration GetKeyCHG - give arg types
+..\..\User\sim800l\SIM800L.h(15): warning:  #1295-D: Deprecated declaration CBCDATA - give arg types
+..\..\User\main.c(28): warning:  #1295-D: Deprecated declaration GetId - give arg types
+..\..\User\main.c(41): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(42): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(43): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(49): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(123): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(124): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(125): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(126): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(127): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(145): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(146): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(148): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\main.c(150): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(163): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(167): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(171): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(179): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(179): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(179): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(180): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(181): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(181): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(182): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(182): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(183): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(183): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(184): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(184): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(185): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(185): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(185): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(185): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(185): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(186): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(186): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(186): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(187): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(187): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(187): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(188): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(188): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(188): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(189): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(189): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(189): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(190): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(190): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(190): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(191): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(191): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(192): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(192): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(193): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(193): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(194): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(194): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(195): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(195): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(195): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(196): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(199): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(202): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(204): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(205): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(207): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\main.c(218): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(222): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\main.c(159): warning:  #128-D: loop is not reachable
+..\..\User\main.c(93): warning:  #177-D: variable "times" was declared but never referenced
+..\..\User\main.c(95): warning:  #177-D: variable "s" was declared but never referenced
+..\..\User\main.c(264): warning:  #223-D: function "USART1_SendByte" declared implicitly
+..\..\User\main.c(246): warning:  #177-D: variable "i_d" was declared but never referenced
+..\..\User\main.c(280): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\main.c(284): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(286): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\main.c(289): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\main.c(292): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\main.c(297): warning:  #940-D: missing return statement at end of non-void function "process_uart2_dmass_data"
+linking...
+Program Size: Code=11448 RO-data=336 RW-data=180 ZI-data=2908  
+FromELF: creating hex file...
+"..\..\Output\Template.axf" - 0 Errors, 82 Warning(s).
+Build target 'ISO-MINI????'
+linking...
+Program Size: Code=11448 RO-data=336 RW-data=180 ZI-data=2908  
+FromELF: creating hex file...
+"..\..\Output\Template.axf" - 0 Errors, 0 Warning(s).
+Load "..\\..\\Output\\Template.axf" 
+Set JLink Project File to "G:\github\ICT_LaboratoryProject_STM32\Project\RVMDKú¿uv4ú®\JLinkSettings.ini"
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.68a, compiled Apr 12 2013 13:26:50
+Firmware: J-Link V9 compiled Jan 29 2015 11:26:22
+Hardware: V9.20
+Feature(s) : GDB, RDI, FlashBP, FlashDL, JFlash 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.296V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 0, TMS: 1, TRES: 1, TRST: 0
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 500 kHz
+ 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Load "..\\..\\Output\\Template.axf" 
+Set JLink Project File to "G:\github\ICT_LaboratoryProject_STM32\Project\RVMDKú¿uv4ú®\JLinkSettings.ini"
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.68a, compiled Apr 12 2013 13:26:50
+Firmware: J-Link V9 compiled Jan 29 2015 11:26:22
+Hardware: V9.20
+Feature(s) : GDB, RDI, FlashBP, FlashDL, JFlash 
+ 
+* JLink Info: STM32F1xxx: Can not attach to CPU. Trying connect under reset.
+Build target 'ISO-MINI????'
+compiling main.c...
+..\..\User\sim800l\SIM800L.h(8): warning:  #1295-D: Deprecated declaration GPSVLD - give arg types
+..\..\User\sim800l\SIM800L.h(12): warning:  #1295-D: Deprecated declaration GetKeyCHG - give arg types
+..\..\User\sim800l\SIM800L.h(15): warning:  #1295-D: Deprecated declaration CBCDATA - give arg types
+..\..\User\main.c(28): warning:  #1295-D: Deprecated declaration GetId - give arg types
+..\..\User\main.c(41): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(42): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(43): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(49): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(123): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(124): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(125): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(126): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(127): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(145): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(146): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(149): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\main.c(151): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(167): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(171): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(175): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(183): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(183): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(183): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(184): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(185): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(185): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(186): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(186): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(187): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(187): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(188): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(188): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(189): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(189): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(189): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(189): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(189): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(190): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(190): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(190): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(191): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(191): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(191): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(192): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(192): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(192): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(193): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(193): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(193): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(194): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(194): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(194): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(195): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(195): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(196): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(196): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(197): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(197): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(198): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(198): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(199): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(199): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(199): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(200): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(203): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(206): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(208): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(209): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(211): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\main.c(222): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(226): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\main.c(163): warning:  #128-D: loop is not reachable
+..\..\User\main.c(93): warning:  #177-D: variable "times" was declared but never referenced
+..\..\User\main.c(95): warning:  #177-D: variable "s" was declared but never referenced
+..\..\User\main.c(268): warning:  #223-D: function "USART1_SendByte" declared implicitly
+..\..\User\main.c(250): warning:  #177-D: variable "i_d" was declared but never referenced
+..\..\User\main.c(284): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\main.c(288): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(290): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\main.c(293): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\main.c(296): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\main.c(301): warning:  #940-D: missing return statement at end of non-void function "process_uart2_dmass_data"
+linking...
+Program Size: Code=11488 RO-data=336 RW-data=180 ZI-data=2908  
+FromELF: creating hex file...
+"..\..\Output\Template.axf" - 0 Errors, 82 Warning(s).
+Load "..\\..\\Output\\Template.axf" 
+Set JLink Project File to "G:\github\ICT_LaboratoryProject_STM32\Project\RVMDKú¿uv4ú®\JLinkSettings.ini"
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.68a, compiled Apr 12 2013 13:26:50
+Firmware: J-Link V9 compiled Jan 29 2015 11:26:22
+Hardware: V9.20
+Feature(s) : GDB, RDI, FlashBP, FlashDL, JFlash 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.298V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 0, TMS: 1, TRES: 1, TRST: 0
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 500 kHz
+ 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'ISO-MINI????'
+compiling main.c...
+..\..\User\sim800l\SIM800L.h(8): warning:  #1295-D: Deprecated declaration GPSVLD - give arg types
+..\..\User\sim800l\SIM800L.h(12): warning:  #1295-D: Deprecated declaration GetKeyCHG - give arg types
+..\..\User\sim800l\SIM800L.h(15): warning:  #1295-D: Deprecated declaration CBCDATA - give arg types
+..\..\User\main.c(28): warning:  #1295-D: Deprecated declaration GetId - give arg types
+..\..\User\main.c(41): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(42): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(43): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(49): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(123): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(124): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(125): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(126): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(127): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(145): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(146): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(149): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\main.c(151): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(161): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(165): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(169): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(177): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(177): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(177): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(178): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(179): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(179): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(180): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(180): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(181): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(181): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(182): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(182): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(183): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(183): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(183): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(183): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(183): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(184): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(184): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(184): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(185): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(185): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(185): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(186): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(186): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(186): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(187): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(187): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(187): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(188): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(188): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(188): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(189): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(189): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(190): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(190): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(191): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(191): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(192): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(192): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(193): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(193): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(193): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(194): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(197): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(200): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(202): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(203): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(205): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\main.c(215): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(219): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\main.c(93): warning:  #177-D: variable "times" was declared but never referenced
+..\..\User\main.c(95): warning:  #177-D: variable "s" was declared but never referenced
+..\..\User\main.c(261): warning:  #223-D: function "USART1_SendByte" declared implicitly
+..\..\User\main.c(243): warning:  #177-D: variable "i_d" was declared but never referenced
+..\..\User\main.c(277): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\main.c(281): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(283): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\main.c(286): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\main.c(289): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\main.c(294): warning:  #940-D: missing return statement at end of non-void function "process_uart2_dmass_data"
+linking...
+Program Size: Code=15256 RO-data=400 RW-data=180 ZI-data=2908  
+FromELF: creating hex file...
+"..\..\Output\Template.axf" - 0 Errors, 81 Warning(s).
+Build target 'ISO-MINI????'
+linking...
+Program Size: Code=15256 RO-data=400 RW-data=180 ZI-data=2908  
+FromELF: creating hex file...
+"..\..\Output\Template.axf" - 0 Errors, 0 Warning(s).
+Load "..\\..\\Output\\Template.axf" 
+Set JLink Project File to "G:\github\ICT_LaboratoryProject_STM32\Project\RVMDKú¿uv4ú®\JLinkSettings.ini"
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.68a, compiled Apr 12 2013 13:26:50
+Firmware: J-Link V9 compiled Jan 29 2015 11:26:22
+Hardware: V9.20
+Feature(s) : GDB, RDI, FlashBP, FlashDL, JFlash 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.298V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 0, TMS: 1, TRES: 1, TRST: 0
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 500 kHz
+ 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'ISO-MINI????'
+compiling main.c...
+..\..\User\sim800l\SIM800L.h(8): warning:  #1295-D: Deprecated declaration GPSVLD - give arg types
+..\..\User\sim800l\SIM800L.h(12): warning:  #1295-D: Deprecated declaration GetKeyCHG - give arg types
+..\..\User\sim800l\SIM800L.h(15): warning:  #1295-D: Deprecated declaration CBCDATA - give arg types
+..\..\User\main.c(28): warning:  #1295-D: Deprecated declaration GetId - give arg types
+..\..\User\main.c(41): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(42): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(43): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(49): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(123): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(124): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(125): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(126): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(127): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(145): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(146): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(147): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(150): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\main.c(152): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(154): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(163): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(167): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(171): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(179): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(179): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(179): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(180): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(181): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(181): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(182): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(182): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(183): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(183): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(184): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(184): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(185): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(185): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(185): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(185): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(185): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(186): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(186): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(186): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(187): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(187): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(187): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(188): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(188): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(188): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(189): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(189): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(189): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(190): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(190): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(190): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(191): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(191): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(192): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(192): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(193): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(193): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(194): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(194): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(195): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(195): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(195): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(196): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(199): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(202): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(204): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(205): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(207): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\main.c(217): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(221): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\main.c(93): warning:  #177-D: variable "times" was declared but never referenced
+..\..\User\main.c(95): warning:  #177-D: variable "s" was declared but never referenced
+..\..\User\main.c(263): warning:  #223-D: function "USART1_SendByte" declared implicitly
+..\..\User\main.c(245): warning:  #177-D: variable "i_d" was declared but never referenced
+..\..\User\main.c(279): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\main.c(283): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(285): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\main.c(288): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\main.c(291): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\main.c(296): warning:  #940-D: missing return statement at end of non-void function "process_uart2_dmass_data"
+linking...
+Program Size: Code=15268 RO-data=400 RW-data=180 ZI-data=2908  
+FromELF: creating hex file...
+"..\..\Output\Template.axf" - 0 Errors, 83 Warning(s).
+Load "..\\..\\Output\\Template.axf" 
+Set JLink Project File to "G:\github\ICT_LaboratoryProject_STM32\Project\RVMDKú¿uv4ú®\JLinkSettings.ini"
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.68a, compiled Apr 12 2013 13:26:50
+Firmware: J-Link V9 compiled Jan 29 2015 11:26:22
+Hardware: V9.20
+Feature(s) : GDB, RDI, FlashBP, FlashDL, JFlash 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.293V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 0, TMS: 1, TRES: 1, TRST: 0
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 500 kHz
+ 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'ISO-MINI????'
+compiling main.c...
+..\..\User\sim800l\SIM800L.h(8): warning:  #1295-D: Deprecated declaration GPSVLD - give arg types
+..\..\User\sim800l\SIM800L.h(12): warning:  #1295-D: Deprecated declaration GetKeyCHG - give arg types
+..\..\User\sim800l\SIM800L.h(15): warning:  #1295-D: Deprecated declaration CBCDATA - give arg types
+..\..\User\main.c(28): warning:  #1295-D: Deprecated declaration GetId - give arg types
+..\..\User\main.c(41): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(42): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(43): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(49): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(123): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(124): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(125): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(126): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(127): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(145): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(146): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(147): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(150): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\main.c(152): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(154): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(163): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(167): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(171): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(179): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(179): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(179): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(180): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(181): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(181): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(182): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(182): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(183): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(183): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(184): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(184): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(185): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(185): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(185): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(185): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(185): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(186): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(186): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(186): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(187): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(187): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(187): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(188): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(188): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(188): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(189): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(189): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(189): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(190): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(190): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(190): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(191): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(191): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(192): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(192): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(193): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(193): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(194): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(194): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(195): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(195): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(195): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(196): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(199): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+..\..\User\main.c(202): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(204): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(205): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+..\..\User\main.c(207): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\main.c(217): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(221): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\main.c(93): warning:  #177-D: variable "times" was declared but never referenced
+..\..\User\main.c(95): warning:  #177-D: variable "s" was declared but never referenced
+..\..\User\main.c(263): warning:  #223-D: function "USART1_SendByte" declared implicitly
+..\..\User\main.c(245): warning:  #177-D: variable "i_d" was declared but never referenced
+..\..\User\main.c(279): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\main.c(283): warning:  #188-D: enumerated type mixed with another type
+..\..\User\main.c(285): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\main.c(288): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\main.c(291): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+..\..\User\main.c(296): warning:  #940-D: missing return statement at end of non-void function "process_uart2_dmass_data"
+linking...
+Program Size: Code=15240 RO-data=400 RW-data=180 ZI-data=2908  
+FromELF: creating hex file...
+"..\..\Output\Template.axf" - 0 Errors, 83 Warning(s).
+Load "..\\..\\Output\\Template.axf" 
+Set JLink Project File to "G:\github\ICT_LaboratoryProject_STM32\Project\RVMDKú¿uv4ú®\JLinkSettings.ini"
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.68a, compiled Apr 12 2013 13:26:50
+Firmware: J-Link V9 compiled Jan 29 2015 11:26:22
+Hardware: V9.20
+Feature(s) : GDB, RDI, FlashBP, FlashDL, JFlash 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.298V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 0, TMS: 1, TRES: 1, TRST: 0
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 500 kHz
+ 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Application running ...

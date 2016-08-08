@@ -125,14 +125,9 @@ int times=0;
 		flag_gps=0;
 		flag_cbc=0;
 		flag_chg=0;	
-	
-
-    USART2_DMASS("AT+CLVL=88\n",100,100);			//外放音量
-		USART2_DMASS("ATD17701309542;\n",100,100);//测试电话功能
-		delay(20000);delay(20000);delay(20000);delay(20000);delay(20000);delay(20000);
+	 		
     while(1)
-		{
-			
+		{		
 			if(flag_send){			
 				flag_send=0;
 				USART2_DMASS("AT+CGPSINF=32\n",100,100);//查询GPRMC数据					
@@ -186,7 +181,6 @@ int times=0;
 ////						USART2_DMAS(id);
 					delay(1000);
 					USART2_DMASS(NULL,2000,1000);		//
-
 				}
 			if(flag_cbc){
 				flag_cbc=0;
@@ -256,7 +250,6 @@ int process_uart2_dmass_data(int len)
       USART2_DMASS("ATL9\n",100,100);//开启扬声器 ，没有效果
 			USART2_DMASS("ATA\n",100,100);
       flag_call=1;
-		
 	}
 	if(strstr(Ub,"Fix")){
       
@@ -272,3 +265,24 @@ int process_uart2_dmass_data(int len)
 }
 /* ----------------------------------------end of file------------------------------------------------ */
 
+//send sim message 
+//		USART2_DMASS("AT+CMGD=1\n",100,100);
+//		delay(1000);
+//		//USART2_DMASS("AT+CSCS=\"GB2312\"\n",100,100);
+//		delay(1000);
+//		USART2_DMASS("AT+CNMI=2,1\n",100,100);
+//		delay(1000);
+//		memset(CMD_buff, 0, sizeof(CMD_buff));
+//		strcat(CMD_buff, "AT+CMGS=\"+8617701309542\"\0");  //修改为指定号码
+//		strcat(CMD_buff, "\n");
+//		DebugPf(CMD_buff);
+//		USART2_DMASS(CMD_buff,100,1000);		//
+//		delay(1000);
+//		if(strstr(Ub,">")){	
+//					memset(send_buff, 0, sizeof(send_buff));     //修改为需要内容
+//					strcat(send_buff, "message test\0");
+//					USART2_DMAS(send_buff);		
+//					USART2_SendByte(0x0a);			//算1位		
+//					USART2_SendByte(0x1A);		  //		
+//		}
+	//end
